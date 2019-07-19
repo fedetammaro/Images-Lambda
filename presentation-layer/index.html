@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LAMBDA Images Retrieval</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </head>
+  
+  <body>
+  	<!-- IMAGE -->  
+	    <div class="image-div centered">
+	      <a href="#" id="lambda_logo"><img src="img/lambda-logo.png"/></a>
+	    </div>
+	    
+	    <!-- FORM SEARCH -->
+	    <div class="form-div centered">  
+	      <form id="form">
+	        <input type="text" id="form-text" placeholder="Insert here your query">
+	        <label for="form-text"></label>
+	        <input type="submit" onclick="setInterval(getMRIFromQuery, 3000)" id="form-button" class="waves-effect waves-light btn" value="Search">
+	      </form>
+	    </div>
+
+	    <!-- RESULTS -->
+	    <div id="results" class="fixed-height">
+		    <div class="most-relevant-image">
+		    	<img src="" id="result-1" class="fixed-width">
+		    </div>
+
+		    <div class="most-relevant-image">
+		    	<img src="" id="result-2" class="fixed-width">
+		    </div>
+
+		    <div class="most-relevant-image">
+		    	<img src="" id="result-3" class="fixed-width">
+		    </div>
+		</div>
+	    <script src="index.js"></script>
+  </body>
+</html>
+
+
