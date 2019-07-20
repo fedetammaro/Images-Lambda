@@ -9,7 +9,7 @@ document.getElementById('form').onsubmit = function() {
 
 // Create a request variable and assign a new XMLHttpRequest object to it.
 var request = new XMLHttpRequest();
-var BE_IP = 'INSERT REST-API SERVER IP HERE';
+var BE_IP = '10.34.14.158:8080';
 
 function startLambda() {
 	let apiUrl = 'http://' + BE_IP + '/getMostRelevant/' + query;
@@ -33,6 +33,7 @@ function getMRIFromQuery() {
 function retrieveImagesFromPath(paths) {
 	console.log(paths);
 	let count = 1;
+
 	paths.forEach(path => {
 		let apiUrl = 'http://' + BE_IP + '/getImage' + path.path;
 		var request = new XMLHttpRequest();
@@ -49,7 +50,12 @@ function retrieveImagesFromPath(paths) {
 			 	count++;
 			}
 		}
-
 		request.send();
 	});
+
+	if (count < 3) {
+		for (let i = count; i <= 3; i++) {
+			document.getElementById("result-" + i.toString()).src = "";
+		}
+	}
 }
