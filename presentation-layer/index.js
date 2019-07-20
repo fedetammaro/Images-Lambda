@@ -9,7 +9,7 @@ document.getElementById('form').onsubmit = function() {
 
 // Create a request variable and assign a new XMLHttpRequest object to it.
 var request = new XMLHttpRequest();
-var BE_IP = '10.34.14.158:8080';
+var BE_IP = 'INSERT API-REST SERVER IP HERE';
 
 function startLambda() {
 	let apiUrl = 'http://' + BE_IP + '/getMostRelevant/' + query;
