@@ -6,7 +6,7 @@ Final assignment for the Parallel Computing course at Università degli Studi di
 
 This Lambda Architecture retrieves images from Google and Bing, based on a given keyword, and processes them in order to show the user the most relevant images for the given query. Image features are extracted using the CEDD descriptor.
 
-A more complete analysis of the project can be found in the paper.
+A more complete analysis of the project can be found in the [paper](https://github.com/Sfullez/Images-Lambda/blob/master/PC_2018_19_Final_Project_Report.pdf).
 ## Usage
 In order to use this architecture, Hadoop must be started and a new namenode must be created. Example, from the Hadoop installation directory:
 
