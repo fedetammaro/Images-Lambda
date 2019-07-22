@@ -1,4 +1,5 @@
 
+
 # Images-Lambda
 ## Overview
 ![Overview of the entire architecture](https://i.imgur.com/aOXSKAU.png)
@@ -17,6 +18,8 @@ Then, the Spring Boot web application and the Cassandra database must be started
 
     sudo service cassandra start
     jar springboot-artifact-name.jar
+
+**Important:** the exported .jar files of both batch and speed layers must be in the same folder as the driver Python file!
 
 ## Technologies used
  - Java 8
